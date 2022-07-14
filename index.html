@@ -2,10 +2,103 @@
 <html>
 	<head>
 		<title> My new Website </title>
+		<link rel="stylesheet" src="./style.css" />
 	</head>
 
 	<body>
-		<!-- First website -->
-		Hello World!
+		<a href="#content2">
+			Go to content 2
+		</a>
+
+		<a href="./login.html">
+			Login
+		</a>
+		<div id="hero" name="list_container" class="hero"> <!-- class will help you deisgn this element -->
+			<!-- headings 1-6 -->
+			<h1>
+				My lists
+			</h1>
+
+			<h2>
+				List 1
+			</h2>
+
+			<!-- Ordered list -->
+			<ol>
+				<li> Build modern ... </li>
+				<li> Built in auth </li>
+				<li> Blazing fast graphql ...</li>
+				<li> Open source </li>
+			</ol>
+
+			<h2>
+				List 2
+			</h2>
+
+			<!-- Unordered list -->
+			<ul>
+				<li> Build modern ... </li>
+				<li> <b>Built in auth </b> </li>
+				<li> <u> Blazing fast graphql ...</u></li>
+				<li> <em> Open source </em> </li>
+			</ul>
+		</div>
+
+		<div id="content1">
+			<h1>
+				About me
+			</h1>
+
+			<p class="hero">
+				Hello, my name is <span class="coloured-text"> Vrishin. </span>
+				<br />	<!-- Self closing tag -->
+				I work at Foretag.
+			</p>
+
+			<button>
+				<a href="./about.html">
+					Read more
+				</a>
+			</button>
+
+			<button onclick="showAlert()">
+				Show alert
+			</button>
+
+		
+
+		<div id="content2">
+			This is more content
+		</div>
+
+		<div>
+			<img src="./image1.jpg" alt="Elephant photo" />
+		</div>
+
+		<div>
+			<img src="https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706__340.jpg"  alt="dice photo" />
+		</div>
+
+		<script type="text/javascript">
+			function showAlert()
+			{
+				alert("I'm an alert");
+			}
+		</script>
 	</body>
 </html>
+
+<!--
+	. -> Current directory
+	.. -> Parent Directory
+	../.. -> Parent of parent Directory
+
+	HTML:
+	. -> Select a class
+	# -> Select an ID
+
+	xml
+	json
+	javasript
+	php
+-->
