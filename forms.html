@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> HTML Forms </title>
+	</head>
+	<body>
+		<form
+			id="login"
+			method="POST"
+			action="./login.js"
+		>
+			<input type="text" name="username" placeholder="USername" pattern="[a-zA-Z]{5}" />
+			<input type="password" name="password" placeholder="password"/>
+			
+			<p />
+			<input name="xyz" type="checkbox"> Login anonymously? </input>
+			<input name="xyz" type="checkbox"> Login  as a guest? </input>
+			<input type="submit" />
+		</form>
+
+		<form
+			id="register"
+			method="POST"
+			action="foretag.co"
+		>
+			<input type="text" name="username" placeholder="USername" />
+			<input type="password" name="password" placeholder="password"/>
+			<input type="email" name="email" placeholder="E-mail" required />
+			<p />
+			Whats 2+2? <!-- 4 -->
+			<input type="number" min="0" max="10" />
+			Rate this movie: <input type="range" min="0" max="10" />
+
+			Select your editor:
+			<select>
+				<option value="vsc">VSCODE</option>
+				<option value="note">Notepad</option>
+			</select>
+
+			<p />
+
+			Select your gender:
+			<input type="radio" name="gender"> Male </input>
+			<input type="radio" name="gender"> Female </input>
+			<input type="radio" name="gender"> Other </input>
+			<input type="submit" />
+
+			<input list="list1" />
+			<datalist id="list1">
+				<option value="vsc">VSCODE</option>
+				<option value="note">Notepad</option>
+			</datalist>
+		</form>
+	</body>
+</html>
+
+<!--
+	Select all that are applicable:
+	[-] Student
+	[-] In college
+	[] In school
+	[] Working
+	[] xyz
+
+	Submit -> var details = ["Student", "In college"]
+
+	var e;
+	e.username
+	e.xyz = ["Login anonymously?", "Login  as a guest?"]
+	e.editor = "vsc"
+
+	Boolean
+	-> True (1)
+	-> False (0)
+
+	Regex = Regular Expressions
+-->
